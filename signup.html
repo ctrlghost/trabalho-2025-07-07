@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>PetMatch</title>
+    </head>
+    
+<body>
+    <h1 style="text-align: center;">PetMatch</h1>
+    <h2 style="text-align: center;">Find Your Purr-fect Match!</h2>
+<br>
+<div style="text-align: center;">
+_________________________________________________________________________________________________________________________</div>
+<br>
+<div style="text-align: center;">
+<img src="https://www.shutterstock.com/image-photo/happy-puppy-dog-smiling-on-600nw-1799966587.jpg" width="800"></div>
+<div style="text-align: center;">
+    <h2 style="text-align: center;">Account Sign Up</h2>
+    _________________________________________________________________________________________________________________________</div>
+<br>
+<form action="signup.html" method="get" style="text-align: center;">
+<label for="campo-nome">Name</label>
+<input type="text" required minlength="3" maxlength="15" id="campo-nome" name="Name">
+<br>
+<label for="campo-idade">Age</label>
+<input type="number" required min="1" max="100" id="campo-idade" name="Age">
+<br>
+<label for="campo-email">Email</label>
+<input type="email" required id="campo-email" name="Email">
+<br>
+<label for="campo-senha">Password</label>
+<input type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one number.">
+<br>
+<label for="campo-estado">State</label>
+<select name="State" required>
+    <option>AC</option>
+    <option>AL</option>
+    <option>AP</option>
+    <option>AM</option>
+    <option>BA</option>
+    <option>CE</option>
+    <option>DF</option>
+    <option>ES</option>
+    <option>GO</option>
+    <option>MA</option>
+    <option>MT</option>
+    <option>MS</option>
+    <option>MG</option>
+    <option>PA</option>
+    <option>PB</option>
+    <option>PR</option>
+    <option>PE</option>
+    <option>PI</option>
+    <option>RJ</option>
+    <option>RN</option>
+    <option>RS</option>
+    <option>RO</option>
+    <option>RR</option>
+    <option>SC</option>
+    <option>SP</option>
+    <option>SE</option>
+    <option>TO</option>
+</select>
+<br>
+<label for="campo-cidade">City</label>
+<input type="text" required minlength="3" maxlength="50" id="campo-cidade" name="City">
+<br>
+<label for="campo-bairro">Neighbourhood</label>
+<input type="text" required minlength="2" maxlength="50" id="campo-bairro" name="Neighbourhood">
+<br>
+<label for="campo-cep">CEP</label>
+<input type="text" required pattern="\d{2}\.\d{3}-\d{3}" id="campo-cep" name="CEP">
+<br>
+<label for="campo-numero">Number</label>
+<input type="text" required minlength="1" maxlength="10" id="campo-numero" name="Number">
+<br>
+<label for="campo-rua">Rua</label>
+<input type="text" required minlength="2" maxlength="50" id="campo-rua" name="Rua">
+<br>
+<label for="campo-complemento">Complemento</label><br>
+<textarea id="campo-complemento" name="Complemento" rows="10" cols="20" required></textarea>
+<br>
+<label for="campo-tipo">Tipo</label>
+<input type="radio" id="campo-casa" name="Tipo" value="Casa">
+<label for="campo-casa">Casa</label>
+
+<input type="radio" id="campo-apartamento" name="Tipo" value="Apartamento">
+<label for="campo-apartamento">Apartamento</label>
+<br>
+<br>
+<div style="text-align: center;">
+<button type="submit">Finalizar cadastro</button></div>
+</form>
